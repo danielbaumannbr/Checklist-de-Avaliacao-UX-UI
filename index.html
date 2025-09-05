@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist de Avaliação UX/UI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: #f8f9fa;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 6px 0;
+    }
+    input[type="text"], input[type="date"] {
+      width: 100%;
+      padding: 6px;
+      margin: 5px 0 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      padding: 6px;
+      margin: 5px 0 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1a242f;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Checklist de Avaliação UX/UI</h1>
+
+  <div class="section">
+    <label>Data da avaliação: <input type="date" id="data"></label>
+    <label>Nome completo: <input type="text" id="nome"></label>
+    <label>Nome do site: <input type="text" id="site"></label>
+    <label>URL: <input type="text" id="url"></label>
+  </div>
+
+  <form id="checklist">
+
+    <div class="section">
+      <h2>Design Mobile First</h2>
+      <label><input type="checkbox" value="O site é totalmente responsivo em diferentes tamanhos de tela?"> O site é totalmente responsivo em diferentes tamanhos de tela?</label>
+      <label><input type="checkbox" value="A navegação é fluida no celular?"> A navegação é fluida no celular?</label>
+    </div>
+
+    <div class="section">
+      <h2>Velocidade de Carregamento</h2>
+      <label><input type="checkbox" value="O site carrega em até 3 segundos?"> O site carrega em até 3 segundos?</label>
+      <label><input type="checkbox" value="Imagens, fontes e scripts estão otimizados?"> Imagens, fontes e scripts estão otimizados?</label>
+    </div>
+
+    <div class="section">
+      <h2>Navegação</h2>
+      <label><input type="checkbox" value="O menu é simples e intuitivo?"> O menu é simples e intuitivo?</label>
+      <label><input type="checkbox" value="O usuário encontra o que procura em até 3 cliques?"> O usuário encontra o que procura em até 3 cliques?</label>
+      <label><input type="checkbox" value="Há trilhas de navegação (breadcrumbs)?"> Há trilhas de navegação (breadcrumbs)?</label>
+    </div>
+
+    <div class="section">
+      <h2>Consistência Visual</h2>
+      <label><input type="checkbox" value="Tipografia, cores e espaçamentos seguem um padrão?"> Tipografia, cores e espaçamentos seguem um padrão?</label>
+      <label><input type="checkbox" value="Botões e elementos têm design uniforme?"> Botões e elementos têm design uniforme?</label>
+    </div>
+
+    <div class="section">
+      <h2>Hierarquia Visual</h2>
+      <label><input type="checkbox" value="Títulos e botões principais se destacam claramente?"> Títulos e botões principais se destacam claramente?</label>
+      <label><input type="checkbox" value="Uso adequado de contraste, cores e espaçamento?"> Uso adequado de contraste, cores e espaçamento?</label>
+    </div>
+
+    <div class="section">
+      <h2>Acessibilidade</h2>
+      <label><input type="checkbox" value="Todas as imagens têm texto alternativo (alt text)?"> Todas as imagens têm texto alternativo (alt text)?</label>
+      <label><input type="checkbox" value="Há contraste mínimo de 4.5:1 no texto?"> Há contraste mínimo de 4.5:1 no texto?</label>
+      <label><input type="checkbox" value="É possível navegar apenas com teclado?"> É possível navegar apenas com teclado?</label>
+    </div>
+
+    <div class="section">
+      <h2>Chamadas para Ação (CTAs)</h2>
+      <label><input type="checkbox" value="Botões possuem rótulos claros e objetivos?"> Botões possuem rótulos claros e objetivos?</label>
+      <label><input type="checkbox" value="Estão posicionados próximos ao conteúdo relevante?"> Estão posicionados próximos ao conteúdo relevante?</label>
+    </div>
+
+    <div class="section">
+      <h2>Formulários e Checkout</h2>
+      <label><input type="checkbox" value="Apenas campos necessários são obrigatórios?"> Apenas campos necessários são obrigatórios?</label>
+      <label><input type="checkbox" value="Há validação em tempo real?"> Há validação em tempo real?</label>
+      <label><input type="checkbox" value="Existe opção de checkout rápido (convidado ou login único)?"> Existe opção de checkout rápido (convidado ou login único)?</label>
+    </div>
+
+    <div class="section">
+      <h2>Microinterações e Feedback</h2>
+      <label><input type="checkbox" value="Botões e links dão feedback ao serem clicados?"> Botões e links dão feedback ao serem clicados?</label>
+      <label><input type="checkbox" value="Há mensagens claras de confirmação e erro?"> Há mensagens claras de confirmação e erro?</label>
+      <label><input type="checkbox" value="As transições são rápidas e suaves?"> As transições são rápidas e suaves?</label>
+    </div>
+
+    <div class="section">
+      <h2>Conteúdo</h2>
+      <label><input type="checkbox" value="O texto é claro, direto e útil para o usuário?"> O texto é claro, direto e útil para o usuário?</label>
+      <label><input type="checkbox" value="O conteúdo está dividido em subtítulos, listas e blocos fáceis de ler?"> O conteúdo está dividido em subtítulos, listas e blocos fáceis de ler?</label>
+      <label><input type="checkbox" value="O conteúdo corresponde às necessidades reais do usuário?"> O conteúdo corresponde às necessidades reais do usuário?</label>
+    </div>
+
+    <div class="section">
+      <h2>📊 Resultado da Avaliação</h2>
+      <label>Pontos a melhorar:</label>
+      <textarea id="melhorar"></textarea>
+      <label>Recomendações finais:</label>
+      <textarea id="recomendacoes"></textarea>
+    </div>
+
+    <button type="button" onclick="gerarRelatorio()">Gerar Relatório TXT</button>
+  </form>
+
+  <script>
+    function gerarRelatorio() {
+      const nome = document.getElementById("nome").value;
+      const data = document.getElementById("data").value;
+      const site = document.getElementById("site").value;
+      const url = document.getElementById("url").value;
+      const melhorar = document.getElementById("melhorar").value;
+      const recomendacoes = document.getElementById("recomendacoes").value;
+
+      const checkboxes = document.querySelectorAll("#checklist input[type='checkbox']");
+      let conformidades = [];
+      let naoConformidades = [];
+
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          conformidades.push(cb.value);
+        } else {
+          naoConformidades.push(cb.value);
+        }
+      });
+
+      let relatorio = `Checklist de Avaliação UX/UI\n`;
+      relatorio += `Data da avaliação: ${data}\n`;
+      relatorio += `Nome completo: ${nome}\n`;
+      relatorio += `Nome do site: ${site}\n`;
+      relatorio += `URL: ${url}\n\n`;
+
+      relatorio += `📊 Resultado da Avaliação\n`;
+      relatorio += `Conformidades: ${conformidades.length} / ${checkboxes.length}\n\n`;
+
+      relatorio += `✅ Itens em conformidade:\n`;
+      conformidades.forEach(c => relatorio += `- ${c}\n`);
+      relatorio += `\n❌ Itens em não conformidade:\n`;
+      naoConformidades.forEach(nc => relatorio += `- ${nc}\n`);
+
+      relatorio += `\nPontos a melhorar: ${melhorar}\n`;
+      relatorio += `Recomendações finais: ${recomendacoes}\n`;
+
+      const blob = new Blob([relatorio], { type: "text/plain;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "relatorio_avaliacao.txt";
+      link.click();
+    }
+  </script>
+
+</body>
+</html>
